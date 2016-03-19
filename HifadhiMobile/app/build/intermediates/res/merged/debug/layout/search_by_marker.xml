@@ -25,25 +25,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SEARCH"
+                android:text="What will you like to order"
                 android:textColor="#fff"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="0dip"
-            android:layout_height="fill_parent"
-            android:layout_weight="1.5"
-            android:gravity="center"
-            android:onClick="btnRestaurant" >
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/restaurant_icon" />
-        </TableRow>
     </LinearLayout>
 
     <LinearLayout
@@ -75,7 +63,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:text="Search" />
+            android:background="#bc4db3"
+            android:text="Search using my current location" />
         
          <TextView
              android:id="@+id/results"

@@ -15,7 +15,6 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
     <uses-permission android:name="android.permission.CALL_PHONE" >
     </uses-permission>
     
@@ -72,7 +71,7 @@
             android:launchMode="singleTop"
             android:name="com.example.hifadhi.TwitterActivity" >
         </activity>
-        <activity android:name="ReviewListActivity" >
+        <activity android:name="com.example.hifadhi.PayNowActivity" >
         </activity>
         <activity
             android:configChanges="keyboard|keyboardHidden|orientation"

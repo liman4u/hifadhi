@@ -62,7 +62,7 @@ public class ItemsDetailsActivity extends Activity {
 
 	private void initUI() {
 		// TODO Auto-generated method stub
-		list = (ListView) findViewById(R.id.reviewListView);
+		//list = (ListView) findViewById(R.id.reviewListView);
 		cName = (TextView) findViewById(R.id.cName);
 		cAdd = (TextView) findViewById(R.id.cAddress);
 

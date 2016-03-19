@@ -23,11 +23,16 @@ public class ItemsMenuParser {
 		// String result = GetText(con.getResources().openRawResource(
 		// R.raw.get_participants));
 
-		String result = "";
+		String result="";
 		try {
-			result = PskHttpRequest.getText(PskHttpRequest
-					.getInputStreamForGetRequest(url));
-		} catch (final URISyntaxException e1) {
+			//result = PskHttpRequest.getText(PskHttpRequest
+			//		.getInputStreamForGetRequest(url));
+
+			result = "{\"marker_item\": [{\"id\":1,\"name\":\"Hawaian\",\"restaurant_id\":\"6\",\"menu_category_id\":\"1\",\"price\":\"30.00 GHS\",\"icon\":\"http://troppa-nl.com/wp-content/uploads/2015/08/pizza-stock.jpg\",\"description\":\"Sticks of gizzard\",\"status\":null,\"created_at\":\"-0001-11-30 00:00:00\",\"updated_at\":\"-0001-11-30 00:00:00\",\"deleted_at\":null}," +
+					"{\"id\":2,\"name\":\"Italian Pizza\",\"restaurant_id\":\"7\",\"menu_category_id\":\"1\",\"price\":\"15.00 GHS\",\"icon\":\"..\\/images\\/11340552279965959_13.pic.jpg\",\"description\":\"Some hot italian pizza\",\"status\":null,\"created_at\":\"-0001-11-30 00:00:00\",\"updated_at\":\"-0001-11-30 00:00:00\",\"deleted_at\":null}," +
+					"{\"id\":3,\"name\":\"BBQ Chicken\",\"restaurant_id\":\"8\",\"menu_category_id\":\"2\",\"price\":\"50.00 GHS\",\"icon\":\"..\\/images\\/396024_498838933466890_600510079_n.jpg\",\"description\":\"First room\",\"status\":null,\"created_at\":\"-0001-11-30 00:00:00\",\"updated_at\":\"-0001-11-30 00:00:00\",\"deleted_at\":null}," +
+					"{\"id\":4,\"name\":\"Marinara\",\"restaurant_id\":\"9\",\"menu_category_id\":\"3\",\"price\":\"30.00 GHS\",\"icon\":\"..\\/images\\/396024_498838933466890_600510079_n.jpg\",\"description\":\"ATM at GT Bank\",\"status\":null,\"created_at\":\"-0001-11-30 00:00:00\",\"updated_at\":\"-0001-11-30 00:00:00\",\"deleted_at\":null}]}";
+		} catch (final Exception e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}

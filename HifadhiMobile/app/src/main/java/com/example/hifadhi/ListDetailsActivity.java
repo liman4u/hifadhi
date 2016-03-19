@@ -1,5 +1,6 @@
 package com.example.hifadhi;
 
+import com.example.hifadhi.utils.JsonParser;
 import com.example.locateit.R;
 import com.example.hifadhi.holder.AllCityReview;
 import com.example.hifadhi.models.CityDetailsList;
@@ -22,6 +23,8 @@ import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.StrictMode;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +35,21 @@ import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONObject;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public class ListDetailsActivity extends Activity {
 	/** Called when the activity is first created. */
@@ -48,6 +66,8 @@ public class ListDetailsActivity extends Activity {
 	private ListView list;
 	//private String Demourl = "https://maps.googleapis.com/maps/api/place/details/json?reference=CnRkAAAAj2VWwXQIX-TFfx6XaexF9rN6Kc005BMP8h0V2pKj7IuyLPWUBCt7gnHr8q9RYWeIva06HuChuwhxsio4f7c9s5aLynGzzX19Oatq8Q9Oz8w2Zj54B8PUNgDNcQ6rHKuKmpAPJBXitOcAYugvPZshDBIQsYMRaNz0n5VfpHx6C2GCFRoUsCD2Zx0P_a-rqyxHN-GTC1QZz2U&sensor=true&key=AIzaSyC6zHflVgVCLKEMWBFMFm5qj0Jis-eoR4U";
 
+	private JsonParser jsonParser;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -56,12 +76,16 @@ public class ListDetailsActivity extends Activity {
 		setContentView(R.layout.detailslayout);
 		con = this;
 
+		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+
+		StrictMode.setThreadPolicy(policy);
+
 		initUI();
 	}
 
 	private void initUI() {
 		// TODO Auto-generated method stub
-		list = (ListView) findViewById(R.id.reviewListView);
+		//list = (ListView) findViewById(R.id.reviewListView);
 		cName = (TextView) findViewById(R.id.cName);
 		cAdd = (TextView) findViewById(R.id.cAddress);
 		cPrice = (TextView) findViewById(R.id.cPrice);
@@ -360,6 +384,95 @@ public class ListDetailsActivity extends Activity {
 					Toast.LENGTH_LONG).show();
 		}
 		
+
+	}
+
+	private boolean error = false;
+	private String responseContent;
+	private String TAG = "content";
+
+	public void payNow(View v){
+
+		final ProgressDialog progressDialog = new ProgressDialog(ListDetailsActivity.this);
+		progressDialog.setIndeterminate(true);
+		progressDialog.setMessage("Processing...");
+		progressDialog.show();
+
+
+		HttpClient httpClient = new DefaultHttpClient();
+		HttpPost httpPost = new HttpPost("http://testpay.vodafonecash.com.gh");
+
+		//getting current time
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy MM dd,HH mm ss");
+		String currentDateandTime = sdf.format(new Date());
+
+
+		List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(4);
+		nameValuePairs.add(new BasicNameValuePair("username","511504"));
+		nameValuePairs.add(new BasicNameValuePair("password","hackathon2"));
+		nameValuePairs.add(new BasicNameValuePair("token","abc1234"));
+		nameValuePairs.add(new BasicNameValuePair("amount", "30"));
+
+
+
+		HttpResponse response = null;
+
+		try {
+			httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+			response = httpClient.execute(httpPost);
+
+			responseContent = EntityUtils.toString(response.getEntity());
+			Log.d("Response", responseContent);
+
+			error = false;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+
+		new android.os.Handler().postDelayed(
+				new Runnable() {
+					public void run() {
+
+						if (!error) {
+							//onStartSuccess(message);
+
+							Intent i = new Intent(ListDetailsActivity.this,PayNowActivity.class);
+							i.putExtra(TAG, responseContent);
+							startActivity(i);
+
+						}else {
+							onStartFailed("");
+						}
+
+						progressDialog.dismiss();
+
+
+					}
+				}, 3000);
+	}
+
+
+	public void onStartSuccess(String message) {
+
+
+		Toast.makeText(getBaseContext(),  message, Toast.LENGTH_LONG).show();
+
+
+		finish();
+	}
+
+	public void onStartFailed(String message) {
+		if(message.isEmpty()){
+			message = "Server problems, try again later.";
+		}
+
+		Toast.makeText(getBaseContext(), "Payment failed,"+message, Toast.LENGTH_LONG).show();
+
+	}
+
+	public void splitBill(){
 
 	}
 

@@ -29,9 +29,14 @@ public class CityMenuParser {
 
 			System.out.println(" url is " + url);
 
-			result = PskHttpRequest.getText(PskHttpRequest
-					.getInputStreamForGetRequest(url));
-		} catch (final URISyntaxException e1) {
+			//result = PskHttpRequest.getText(PskHttpRequest
+			//		.getInputStreamForGetRequest(url));
+
+			result = "{\"marker\": [{\"id\":6,\"name\":\"KFC\",\"lng\":\"-0.999223232\",\"lat\":\"4.59999999\",\"type\":\"1\",\"address\":\"East Legon\",\"website\":\"dsdsds\",\"icon\":\"http://www.comohotels.com/metropolitanbangkok/sites/default/files/styles/background_image/public/images/background/metbkk_bkg_nahm_restaurant.jpg?itok=GSmnYYaU\",\"email\":\"liman4u@live.com\",\"phone_number\":\"3333\",\"rating\":\"2\",\"created_at\":\"-0001-11-30 00:00:00\",\"updated_at\":\"-0001-11-30 00:00:00\",\"deleted_at\":null}," +
+					"{\"id\":7,\"name\":\"Eddys Pizza\",\"lng\":\"-0.999223232\",\"lat\":\"4.59999999\",\"type\":\"1\",\"address\":\"Circle,Ringroad\",\"website\":\"dsdsds\",\"icon\":\"..\\/images\\/299298_4568835100464_753365229_n.jpg\",\"email\":\"liman4u@live.com\",\"phone_number\":\"3333\",\"rating\":\"2\",\"created_at\":\"-0001-11-30 00:00:00\",\"updated_at\":\"-0001-11-30 00:00:00\",\"deleted_at\":null}," +
+					"{\"id\":8,\"name\":\"Papas\",\"lng\":\"-0.888\",\"lat\":\"3.222\",\"type\":\"1\",\"address\":\"East Legon\",\"website\":\"dsdsds\",\"icon\":\"..\\/images\\/AFR_Technology_Sidebar-1_Rasheeda-2,-photo-by-Elisabeth-Braw.jpg\",\"email\":\"dsds\",\"phone_number\":\"323232\",\"rating\":\"2\",\"created_at\":\"-0001-11-30 00:00:00\",\"updated_at\":\"-0001-11-30 00:00:00\",\"deleted_at\":null}," +
+					"{\"id\":9,\"name\":\"Pizza In\",\"lng\":\"-0.2\",\"lat\":\"5.55\",\"type\":\"1\",\"address\":\"Accra Mall\",\"website\":\"www.gtbank.com\",\"icon\":\"..\\/images\\/11340552279965959_13.pic.jpg\",\"email\":\"gt@gmail.com\",\"phone_number\":\"2333\",\"rating\":\"5\",\"created_at\":\"-0001-11-30 00:00:00\",\"updated_at\":\"-0001-11-30 00:00:00\",\"deleted_at\":null}]}";
+		} catch (final Exception e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}

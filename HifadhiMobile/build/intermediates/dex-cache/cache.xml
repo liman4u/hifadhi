@@ -2,18 +2,32 @@
 <items version="2" >
 
     <item
-        jar="/Users/mac/Galam/Vodafone Hifadhi Code/HifadhiMobile/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/jars/classes.jar"
+        jar="/Users/mac/Galam/Vodafone Hifadhi Code/HifadhiMobile/app/libs/picasso-2.3.4.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
-        <dex dex="/Users/mac/Galam/Vodafone Hifadhi Code/HifadhiMobile/app/build/intermediates/pre-dexed/debug/classes-6bb0c2ff40d22f40be671c3e3980cee1b4154510.jar" />
+        sha1="3b646ddbdac8a33fc45b64564011da81d23e4635">
+        <dex dex="/Users/mac/Galam/Vodafone Hifadhi Code/HifadhiMobile/app/build/intermediates/pre-dexed/debug/picasso-2.3.4-32018742761a6108b8aa814a005015e046e091ca.jar" />
     </item>
     <item
-        jar="/Users/mac/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jar="/Users/mac/Galam/Vodafone Hifadhi Code/HifadhiMobile/app/libs/httpcore-4.4.3.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
-        <dex dex="/Users/mac/Galam/Vodafone Hifadhi Code/HifadhiMobile/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-ca601356e63c0f631d6a5b43c7d7824fd3b57738.jar" />
+        sha1="e876a79d561e5c6207b78d347e198c8c4531a5e5">
+        <dex dex="/Users/mac/Galam/Vodafone Hifadhi Code/HifadhiMobile/app/build/intermediates/pre-dexed/debug/httpcore-4.4.3-9ca30764371fbfc3ded015a046ab5d185f546129.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Galam/Vodafone Hifadhi Code/HifadhiMobile/app/libs/httpclient-4.5.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="7e3cecc566df91338c6c67883b89ddd05a17db43">
+        <dex dex="/Users/mac/Galam/Vodafone Hifadhi Code/HifadhiMobile/app/build/intermediates/pre-dexed/debug/httpclient-4.5.1-565d1fa825b2a371ce87d28524c11442f1559db5.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Galam/Vodafone Hifadhi Code/HifadhiMobile/app/libs/httpmime-4.5.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="96823b9421ebb9f490dec837d9f96134e864e3a7">
+        <dex dex="/Users/mac/Galam/Vodafone Hifadhi Code/HifadhiMobile/app/build/intermediates/pre-dexed/debug/httpmime-4.5.1-a4d67e79d03b76db1661ab437e2e2fc434eba0a8.jar" />
     </item>
 
 </items>

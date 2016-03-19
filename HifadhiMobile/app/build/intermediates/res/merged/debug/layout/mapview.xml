@@ -43,19 +43,7 @@
                 android:textStyle="bold" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="0dip"
-            android:layout_height="fill_parent"
-            android:layout_weight="1.5"
-            android:gravity="center"
-            android:onClick="btnHome" >
 
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/home" />
-        </TableRow>
     </LinearLayout>
 
     <LinearLayout

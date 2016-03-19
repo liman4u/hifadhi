@@ -257,7 +257,7 @@ public class ItemListActivity extends Activity {
 
 	public void btnHome(View v) {
 
-		Intent next = new Intent(con, HifadhiActivity.class);
+		Intent next = new Intent(con, SearchActivity.class);
 		next.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		startActivity(next);
 

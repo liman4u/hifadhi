@@ -112,5 +112,6 @@ Route::group(['prefix' => 'api'], function() {
 
     Route::get('markers', 'Api\MobileController@getRestaurants');
     Route::get('markers/search2/{query}', 'Api\MobileController@searchItems');
+    Route::get('menuitem', 'Api\MobileController@searchMenuItems');
     
 });

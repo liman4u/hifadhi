@@ -4,6 +4,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Log;
 use App\Restaurant;
+use App\MenuItem;
 
 
 class MobileController extends Controller {
@@ -47,6 +48,31 @@ class MobileController extends Controller {
 
             
             return '{"marker": ' . json_encode($restaurants) . '}'; 
+            
+        }
+
+
+        
+    }
+
+    public function searchMenuItems(Request $request) {
+
+        $search_item = $request->input('search_item');
+        
+
+        Log::info("Searching items :: search item ->".$search_item);
+
+
+        if($search_item == null){
+             return '{"error":{"text":"Enter a search item"}}'; 
+        }else{
+            
+            $items =  MenuItem::all();;
+
+            
+
+            
+            return '{"marker": ' . json_encode($items) . '}'; 
             
         }
 

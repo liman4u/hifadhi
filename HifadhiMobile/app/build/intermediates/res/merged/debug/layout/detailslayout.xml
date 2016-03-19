@@ -51,7 +51,7 @@
             android:onClick="btnHome" >
 
             <ImageView
-                android:id="@+id/imageView1"
+                android:id="@+id/imageView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/home" />
@@ -83,7 +83,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
+        android:id="@+id/linearLayout189"
         android:layout_width="fill_parent"
         android:layout_height="0dip"
         android:layout_margin="2dip"
@@ -97,7 +97,7 @@
             android:orientation="vertical" >
 
             <LinearLayout
-                android:id="@+id/linearLayout1"
+                android:id="@+id/linearLayout167"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:gravity="center"
@@ -124,11 +124,11 @@
                             android:layout_gravity="center"
                             android:adjustViewBounds="true"
                             android:scaleType="fitXY"
-                            android:src="@drawable/noimage" />
+                            android:src="@drawable/pizzaeddy" />
                     </TableRow>
 
                     <LinearLayout
-                        android:id="@+id/linearLayout1"
+                        android:id="@+id/linearLayout157"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -139,7 +139,7 @@
                         android:orientation="vertical" >
 
                         <LinearLayout
-                            android:id="@+id/linearLayout1"
+                            android:id="@+id/linearLayout108"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical" >
@@ -155,13 +155,13 @@
                         </LinearLayout>
 
                         <LinearLayout
-                            android:id="@+id/linearLayout1"
+                            android:id="@+id/linearLayout12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal" >
 
                             <TableRow
-                                android:id="@+id/tableRow1"
+                                android:id="@+id/tableRow17"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" >
 
@@ -174,7 +174,7 @@
                             </TableRow>
 
                             <TableRow
-                                android:id="@+id/tableRow1"
+                                android:id="@+id/tableRow17"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginRight="4dip" >
@@ -201,7 +201,7 @@
             android:background="#7d343d" >
 
             <LinearLayout
-                android:id="@+id/linearLayout1"
+                android:id="@+id/linearLayout10"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dip"
@@ -213,18 +213,18 @@
                     android:scrollbars="none" >
 
                     <LinearLayout
-                        android:id="@+id/linearLayout1"
+                        android:id="@+id/linearLayout15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
 
                         <TableRow
-                            android:id="@+id/tableRow1"
+                            android:id="@+id/tableRow19"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" >
 
                             <ImageView
-                                android:id="@+id/imageView3"
+                                android:id="@+id/imageView32"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:onClick="cPhone"
@@ -232,170 +232,37 @@
                         </TableRow>
 
                         <TableRow
-                            android:id="@+id/tableRow1"
+                            android:id="@+id/tableRow13"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" >
 
                             <ImageView
-                                android:id="@+id/imageView3"
+                                android:id="@+id/imageView13"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:onClick="webView"
-                                android:src="@drawable/our_website" />
+                                android:onClick="payNow"
+                                android:src="@drawable/paynow" />
                         </TableRow>
 
                         <TableRow
-                            android:id="@+id/tableRow1"
+                            android:id="@+id/tableRow12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" >
 
                             <ImageView
-                                android:id="@+id/imageView3"
+                                android:id="@+id/imageView30"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:onClick="mapViewBtn"
-                                android:src="@drawable/locate_us" />
+                                android:onClick="splitBill"
+                                android:src="@drawable/splitbill" />
                         </TableRow>
                     </LinearLayout>
                 </HorizontalScrollView>
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="0dip"
-            android:layout_weight="1" >
 
-            <LinearLayout
-                android:id="@+id/linearLayout1"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="2dip"
-                android:orientation="horizontal" >
-
-                <HorizontalScrollView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:scrollbars="none" >
-
-                    <LinearLayout
-                        android:id="@+id/linearLayout1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal" >
-
-                        <TableRow
-                            android:id="@+id/tableRow1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" >
-
-                            <ImageView
-                                android:id="@+id/imageView3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:onClick="reviewViewBtn"
-                                android:src="@drawable/review" />
-                        </TableRow>
-
-                        <TableRow
-                            android:id="@+id/tableRow1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" >
-
-                            <ImageView
-                                android:id="@+id/imageView3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:onClick="sendSMS"
-                                android:src="@drawable/location" />
-                        </TableRow>
-                    </LinearLayout>
-                </HorizontalScrollView>
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="0dip"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:background="#7d343d"
-            android:gravity="center" >
-
-            <LinearLayout
-                android:id="@+id/linearLayout1"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="3dip"
-                android:gravity="center"
-                android:orientation="horizontal" >
-
-                <TableRow
-                    android:id="@+id/tableRow1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center" >
-
-                    <TextView
-                        android:id="@+id/cAddress"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="2dip"
-                        android:text="Reviews"
-                        android:textColor="#fff"
-                        android:textSize="14sp" />
-                </TableRow>
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="0dip"
-            android:layout_weight="3"
-            android:orientation="vertical" >
-
-            <LinearLayout
-                android:id="@+id/linearLayout1"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_marginTop="1dip"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <TableRow
-                    android:id="@+id/tableRow1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center" >
-
-                    <ListView
-                        android:id="@+id/reviewListView"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_margin="1dip"
-                        android:cacheColorHint="#00000000"
-                        android:divider="#00000000"
-                        android:dividerHeight="5dip"
-                        android:scrollbars="none" >
-                    </ListView>
-                </TableRow>
-            </LinearLayout>
-            <!-- <LinearLayout -->
-            <!-- android:layout_width="wrap_content" -->
-            <!-- android:layout_height="wrap_content" -->
-            <!-- android:gravity="center" > -->
-            <!--  -->
-            <!-- <com.google.ads.AdView -->
-            <!-- android:id="@+id/ad" -->
-            <!-- android:layout_width="wrap_content" -->
-            <!-- android:layout_height="wrap_content" -->
-            <!-- ads:adSize="BANNER" -->
-            <!-- ads:adUnitId="a150ed6b43c5e23" -->
-            <!-- android:gravity="center" -->
-            <!-- ads:loadAdOnCreate="true" > -->
-            <!-- </com.google.ads.AdView> -->
-            <!-- </LinearLayout> -->
-        </LinearLayout>
     </LinearLayout>
+
 
 </LinearLayout><!-- From: file:/Users/mac/Galam/Vodafone%20Hifadhi%20Code/HifadhiMobile/app/src/main/res/layout/detailslayout.xml -->
