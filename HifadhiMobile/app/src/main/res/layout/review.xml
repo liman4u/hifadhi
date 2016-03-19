@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linBox"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:background="@drawable/listbg"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reviewbg" >
+
+            <TextView
+                android:id="@+id/reView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:paddingBottom="15dip"
+                android:paddingRight="3dip"
+                android:paddingTop="15dip"
+                android:text="revews, lorem opsumrevews, lorem opsumrevews, lorem opsumrevews, lorem opsumrevews, lorem opsumrevews, lorem opsum"
+                android:textColor="#505050"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+        </TableRow>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dip" >
+
+            <!-- <TableRow -->
+            <!-- android:id="@+id/tableRow1" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:paddingLeft="3dip" -->
+            <!-- android:paddingRight="3dip" > -->
+            <!--  -->
+            <!-- <RatingBar -->
+            <!-- android:id="@+id/rRatingBar" -->
+            <!-- style="?android:attr/ratingBarStyleSmall" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginBottom="2dip" -->
+            <!-- android:layout_marginLeft="2dip" -->
+            <!-- android:layout_marginRight="2dip" -->
+            <!-- android:layout_marginTop="2dip" -->
+            <!-- android:focusable="false" -->
+            <!-- android:focusableInTouchMode="false" -->
+            <!-- android:isIndicator="true" -->
+            <!-- android:numStars="5" -->
+            <!-- android:stepSize="0.1" /> -->
+            <!-- </TableRow> -->
+
+            <TextView
+                android:id="@+id/AuthorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Name" android:layout_marginRight="5dip"
+                android:textColor="#53841A"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

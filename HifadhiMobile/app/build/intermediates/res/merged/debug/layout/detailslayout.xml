@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#7d343d"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TableRow
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:onClick="btnBack" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DETAILS"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:onClick="btnHome" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home" />
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TableRow
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/cName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="#7d343d"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_margin="2dip"
+        android:layout_weight="9"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:gravity="center" >
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/imageViewL"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/noimage" />
+                    </TableRow>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/title"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/cPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dip"
+                                android:text="Price"
+                                android:textColor="#fff"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TableRow
+                                android:id="@+id/tableRow1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="2dip"
+                                    android:src="@drawable/add" />
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tableRow1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="4dip" >
+
+                                <TextView
+                                    android:id="@+id/cAddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="2dip"
+                                    android:text="Address"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </TableRow>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="#7d343d" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:orientation="horizontal" >
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="cPhone"
+                                android:src="@drawable/call_us" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="webView"
+                                android:src="@drawable/our_website" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="mapViewBtn"
+                                android:src="@drawable/locate_us" />
+                        </TableRow>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:orientation="horizontal" >
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="reviewViewBtn"
+                                android:src="@drawable/review" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="sendSMS"
+                                android:src="@drawable/location" />
+                        </TableRow>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#7d343d"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/cAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dip"
+                        android:text="Reviews"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </TableRow>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="1dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <ListView
+                        android:id="@+id/reviewListView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="1dip"
+                        android:cacheColorHint="#00000000"
+                        android:divider="#00000000"
+                        android:dividerHeight="5dip"
+                        android:scrollbars="none" >
+                    </ListView>
+                </TableRow>
+            </LinearLayout>
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:gravity="center" > -->
+            <!--  -->
+            <!-- <com.google.ads.AdView -->
+            <!-- android:id="@+id/ad" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- ads:adSize="BANNER" -->
+            <!-- ads:adUnitId="a150ed6b43c5e23" -->
+            <!-- android:gravity="center" -->
+            <!-- ads:loadAdOnCreate="true" > -->
+            <!-- </com.google.ads.AdView> -->
+            <!-- </LinearLayout> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/mac/Galam/Vodafone%20Hifadhi%20Code/HifadhiMobile/app/src/main/res/layout/detailslayout.xml -->

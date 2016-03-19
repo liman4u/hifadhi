@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3399ff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5.7"
+         android:background="#E4FEDF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <!-- offfffffllllllllllllllline -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/homeview"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_margin="3dip"
+        android:layout_weight="1.5"
+        android:background="#3399ff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/restaurant"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="7"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dip"
+                    android:src="@drawable/restaurant" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RESTAURANT"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hotel"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="7"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:src="@drawable/hotels" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOTEL"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/atm"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="7"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:src="@drawable/atm" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ATM"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".8"
+        android:background="#7d343d"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5" >
+            
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connect with Us"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+            
+        </TableRow>
+        
+        
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="btnFacebook"
+            android:background="#722f30" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facebook" >
+            </ImageView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="btnTwitter"
+            android:background="#722f30" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/twitter" >
+            </ImageView>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dip"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:background="#fff"
+            android:onClick="btnSearch" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search" >
+            </ImageView>
+        </TableRow>
+     
+            
+        
+    </LinearLayout>
+
+    
+
+</LinearLayout>
